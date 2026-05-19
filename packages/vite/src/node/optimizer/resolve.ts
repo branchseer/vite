@@ -1,6 +1,6 @@
 import path from 'node:path'
 import picomatch from 'picomatch'
-import { globSync } from 'tinyglobby'
+import { globSync } from 'globster'
 import type { ResolvedConfig } from '../config'
 import { escapeRegex, getNpmPackageName } from '../utils'
 import { resolvePackageData } from '../packages'

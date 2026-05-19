@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises'
 import path from 'node:path'
 import colors from 'picocolors'
-import { glob, isDynamicPattern } from 'tinyglobby'
+import { glob, isDynamicPattern } from 'globster'
 import { FS_PREFIX } from '../constants'
 import { normalizePath } from '../utils'
 import type { ViteDevServer } from '../index'

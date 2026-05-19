@@ -241,6 +241,9 @@ importers:
 
   packages/vite:
     dependencies:
+      globster:
+        specifier: file:../../../globster
+        version: file:../globster
       lightningcss:
         specifier: ^1.32.0
         version: 1.32.0
@@ -253,9 +256,6 @@ importers:
       rolldown:
         specifier: 1.0.1
         version: 1.0.1
-      tinyglobby:
-        specifier: ^0.2.16
-        version: 0.2.16
     devDependencies:
       '@babel/parser':
         specifier: ^7.29.3
@@ -589,15 +589,15 @@ importers:
       '@tailwindcss/vite':
         specifier: ^4.3.0
         version: 4.3.0(vite@packages+vite)
+      globster:
+        specifier: file:../../../globster
+        version: file:../globster
       sass:
         specifier: ^1.99.0
         version: 1.99.0
       tailwindcss:
         specifier: ^4.3.0
         version: 4.3.0
-      tinyglobby:
-        specifier: ^0.2.16
-        version: 0.2.16
 
   playground/base-conflict: {}
 
@@ -632,6 +632,9 @@ importers:
       '@vitejs/test-scss-proxy-dep':
         specifier: file:./scss-proxy-dep
         version: file:playground/css/scss-proxy-dep
+      globster:
+        specifier: file:../../../globster
+        version: file:../globster
       less:
         specifier: ^4.6.4
         version: 4.6.4
@@ -650,9 +653,6 @@ importers:
       sugarss:
         specifier: ^5.0.1
         version: 5.0.1(postcss@8.5.14)
-      tinyglobby:
-        specifier: ^0.2.16
-        version: 0.2.16
 
   playground/css-codesplit: {}
 
@@ -5974,6 +5974,10 @@ packages:
 
   globrex@0.1.2:
     resolution: {integrity: sha512-uHJgbwAMwNFf5mLst7IWLNg14x1CkeqglJb/K3doi4dw6q2IvAAmM/Y81kevy83wP+Sst+nutFTYOGg3d1lsxg==}
+
+  globster@file:../globster:
+    resolution: {directory: ../globster, type: directory}
+    engines: {node: '>=20.19.0'}
 
   good-listener@1.2.2:
     resolution: {integrity: sha512-goW1b+d9q/HIwbVYZzZ6SsTr4IgE+WA44A0GmPIQstuOrgsFcT7VEJ48nmr9GaRtNu0XTKacFLGnBPAM6Afouw==}
@@ -12347,6 +12351,8 @@ snapshots:
   globals@17.6.0: {}
 
   globrex@0.1.2: {}
+
+  globster@file:../globster: {}
 
   good-listener@1.2.2:
     dependencies:

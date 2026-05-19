@@ -18,7 +18,7 @@ const _URL = URL
 describe('module runner initialization', async () => {
   const it = await createModuleRunnerTester({
     resolve: {
-      external: ['tinyglobby'],
+      external: ['globster'],
       noExternal: ['@oxc-project/runtime'],
     },
   })
@@ -519,7 +519,7 @@ describe('virtual module hmr', async () => {
     await runner.import(
       posix.join(server.config.root, 'fixtures/import-external.ts'),
     )
-    const moduleNode = runner.evaluatedModules.getModuleByUrl('tinyglobby')!
+    const moduleNode = runner.evaluatedModules.getModuleByUrl('globster')!
     const meta = moduleNode.meta as ExternalFetchResult
     if (process.platform === 'win32') {
       expect(meta.externalize).toMatch(/^file:\/\/\/\w:\//) // file:///C:/

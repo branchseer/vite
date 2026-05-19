@@ -1,6 +1,6 @@
 import fs from 'node:fs'
 import path from 'node:path'
-import { globSync } from 'tinyglobby'
+import { globSync } from 'globster'
 import { normalizePath } from 'vite'
 import postcssNested from 'postcss-nested'
 

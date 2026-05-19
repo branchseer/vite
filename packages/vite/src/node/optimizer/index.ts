@@ -5,7 +5,7 @@ import { promisify } from 'node:util'
 import { performance } from 'node:perf_hooks'
 import colors from 'picocolors'
 import { init, parse } from 'es-module-lexer'
-import { isDynamicPattern } from 'tinyglobby'
+import { isDynamicPattern } from 'globster'
 import {
   type RolldownOptions,
   type RolldownOutput,

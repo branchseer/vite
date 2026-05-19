@@ -23,7 +23,7 @@ import type Stylus from 'stylus'
 import type Less from 'less'
 import type { RawSourceMap } from '@jridgewell/remapping'
 import { WorkerWithFallback } from 'artichokie'
-import { globSync } from 'tinyglobby'
+import { globSync } from 'globster'
 import type {
   TransformAttributeResult as LightningCssTransformAttributeResult,
   TransformResult as LightningCssTransformResult,

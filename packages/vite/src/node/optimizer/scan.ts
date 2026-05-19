@@ -7,7 +7,7 @@ import type { TransformOptions as OxcTransformOptions } from 'rolldown/utils'
 import { transformSync } from 'rolldown/utils'
 import type { PartialResolvedId, Plugin } from 'rolldown'
 import colors from 'picocolors'
-import { glob } from 'tinyglobby'
+import { glob } from 'globster'
 import {
   CSS_LANGS_RE,
   JS_TYPES_RE,

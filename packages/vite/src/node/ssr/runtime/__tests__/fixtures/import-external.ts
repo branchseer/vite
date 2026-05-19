@@ -1,1 +1,1 @@
-import 'tinyglobby'
+import 'globster'

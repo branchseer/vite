@@ -1,5 +1,5 @@
 import path from 'node:path'
-import { globSync } from 'tinyglobby'
+import { globSync } from 'globster'
 import { defineConfig, normalizePath } from 'vite'
 import tailwind from '@tailwindcss/vite'
 
